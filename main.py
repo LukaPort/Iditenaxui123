@@ -1,7 +1,6 @@
 import telebot
 import asyncio
 import logging
-import funpayace
 from funpayace import FunpayAce, FunpayConfig
 
 bot = telebot.TeleBot('8734719859:AAG-VCv7T1hHHuUntAJeRidQi4MpJd79te4')
