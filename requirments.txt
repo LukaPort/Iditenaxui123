@@ -1,2 +1,2 @@
 pyTelegtamAPI==4.16.1
-FunpayACE
+funpayace
