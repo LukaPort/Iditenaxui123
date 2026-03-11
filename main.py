@@ -54,10 +54,10 @@ def infa(message):
 
 
             balance = str(await client.get_balance())[8:][:8]
-            balance1 = str(await client1.get_balance())[8:][:6]
-            bot.send_message(message.chat.id, f'Баланс Libro11: {balance} рублей\nБаланс FIiz0r: {balance1} рублей')
+            #balance1 = str(await client1.get_balance())[8:][:6]
+            bot.send_message(message.chat.id, f'Баланс Libro11: {balance} рублей')
             await client.cancel_background_tasks()
-
+#\nБаланс FIiz0r: {balance1} рублей
     if __name__ == "__main__":
         asyncio.run(main())
 
