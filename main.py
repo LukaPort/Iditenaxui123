@@ -10,7 +10,7 @@ from funpayace import FunpayAce, FunpayConfig
 bot = telebot.TeleBot('8734719859:AAG-VCv7T1hHHuUntAJeRidQi4MpJd79te4')
 
 GOLDEN_KEY = "6o1mrmxqbh2spjoct0z0y6fe5rvxcsgu"
-golden_key = "0iep8rib5nc1sy6y71ojzaje5xfdjrq0"
+#golden_key = "0iep8rib5nc1sy6y71ojzaje5xfdjrq0"
 
 balance=''
 
@@ -48,20 +48,20 @@ def infa(message):
 
 
     async def main():
-        client1 = FunpayAce(golden_key=golden_key, config=FunpayConfig())
+        #client1 = FunpayAce(golden_key=golden_key, config=FunpayConfig())
         client = FunpayAce(golden_key=GOLDEN_KEY, config=FunpayConfig())
         async with client:
 
 
             balance = str(await client.get_balance())[8:][:8]
-            balance1 = str(await client1.get_balance())[8:][:6]
-            bot.send_message(message.chat.id, f'Баланс Libro11: {balance} рублей\nБаланс FIiz0r: {balance1} рублей')
+            #balance1 = str(await client1.get_balance())[8:][:6]
+            bot.send_message(message.chat.id, f'Баланс Libro11: {balance} рублей')
             await client.cancel_background_tasks()
 
     if __name__ == "__main__":
         asyncio.run(main())
 
-
+#\nБаланс FIiz0r: {balance1} рублей
 
 
 bot.infinity_polling()
