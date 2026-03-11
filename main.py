@@ -33,7 +33,7 @@ def infa(message):
 
 @bot.message_handler(commands=['don'])
 def don(message):
-    file = open('.venv/don.jpg', 'rb')
+    file = open('.don.jpg', 'rb')
     bot.send_photo(message.chat.id, file)
     bot.send_message(message.chat.id, ' ин ша’а Ллах, братья мои, слава Аллаху Всевышнему, дон')
 
