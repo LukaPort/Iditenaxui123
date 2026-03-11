@@ -31,12 +31,6 @@ def infa(message):
     with open("text.txt","rb") as file:
         bot.send_document(message.chat.id, file)
 
-@bot.message_handler(commands=['don'])
-def don(message):
-    file = open('.don.jpg', 'rb')
-    bot.send_photo(message.chat.id, file)
-    bot.send_message(message.chat.id, ' ин ша’а Ллах, братья мои, слава Аллаху Всевышнему, дон')
-
 @bot.message_handler(commands=['namaz'])
 def namaz(message):
     bot.send_message(message.chat.id, 'Cубханакаллахумма уа бихамдик,')
