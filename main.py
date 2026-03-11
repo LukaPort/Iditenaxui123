@@ -48,7 +48,7 @@ def infa(message):
 
 
     async def main():
-        client1 = FunpayAce(golden_key=golden_key, config=FunpayConfig())
+        #client1 = FunpayAce(golden_key=golden_key, config=FunpayConfig())
         client = FunpayAce(golden_key=GOLDEN_KEY, config=FunpayConfig())
         async with client:
 
