@@ -19,6 +19,10 @@ def start(message):
     for x in range(1,6):
         bot.reply_to(message, 'Иди нахуй')
 
+@bot.message_handler(commands=['art'])
+def start(message):
+    bot.reply_to(message, 'Команда')
+
 @bot.message_handler(commands=['stop'])
 def stop(message):
     bot.reply_to(message, 'Я пидорас')
